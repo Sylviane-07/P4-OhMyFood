@@ -1,0 +1,20 @@
+{
+  "name": "p4-ohmyfood",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass ./sass/main.scss ./assets/css/styles.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sylviane-07/P4-OhMyFood.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Sylviane-07/P4-OhMyFood/issues"
+  },
+  "homepage": "https://github.com/Sylviane-07/P4-OhMyFood#readme"
+}
