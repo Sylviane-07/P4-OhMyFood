@@ -16,12 +16,16 @@
     </header>
     <main>
         <section class="welcome">
-            <form action="#">
-                <i class="fa-solid fa-location-dot"></i><input type="text" placeholder="Paris, Belleville">
-            </form>
-            <h1>Réservez le menu qui vous convient</h1>
-            <p>Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
-            <a href="#" role="button">Explorer nos restaurants</a>
+            <div class="welcome__header">
+                <form action="#">
+                    <i class="fa-solid fa-location-dot welcome__icon"></i><input class="welcome__searchbar" type="text" placeholder="Paris, Belleville">
+                </form>
+            </div>
+            <div class="welcome__text-wrapper">
+                <h1 class="welcome__title">Réservez le menu qui vous convient</h1>
+                <p class="welcome__subtitle">Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
+            </div>
+            <a class="btn btn--gradient" href="#" role="button">Explorer nos restaurants</a>
         </section>
         <section class="booking">
             <h2>Fonctionnement</h2>
