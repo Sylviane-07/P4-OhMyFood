@@ -1,0 +1,14 @@
+@mixin primary-font-family {
+    font-family: 'Shrikhand', cursive;
+}
+
+@mixin secondary-font-family {
+    font-family: 'Roboto', sans-serif;
+}
+
+@mixin flexbox($direction: column, $justify: center, $align: center) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+}

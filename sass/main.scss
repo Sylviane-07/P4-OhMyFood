@@ -1,7 +1,11 @@
-@mixin primary-font-family {
-    font-family: 'Shrikhand', cursive;
+@import "Base/reset";
+@import "Utils/mixin";
+
+
+.header{
+    @include flexbox($direction:row);
 }
 
-@mixin secondary-font-family {
-    font-family: 'Roboto', sans-serif;
+.welcome {
+    @include flexbox();
 }
