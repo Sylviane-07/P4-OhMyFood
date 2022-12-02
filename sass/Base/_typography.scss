@@ -1,0 +1,33 @@
+//Font-family variables
+
+$base-font-family:'Roboto',sans-serif;
+$restaurant-name-font-family: 'Shrikhand', cursive;
+
+$default-size: 1rem;
+$large-font: 1.5rem;
+
+//Font-weight & font-size mixins
+
+@mixin font-300($size: $default-size) {
+    font-weight: 300;
+    font-size: $size;
+}
+
+@mixin font-500($size: $default-size) {
+    font-weight: 500;
+    font-size: $size;
+}
+
+@mixin font-700($size: $large-font) {
+    font-weight: 700;
+    font-size: $size;
+}
+
+// Restaurant menu page title
+
+@mixin menu-page-title {
+    font-family: $restaurant-name-font-family;
+    font-weight: 700;
+    font-size: 1.75rem;
+    font-style: italic;
+}
