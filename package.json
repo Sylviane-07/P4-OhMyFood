@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "sass": "sass ./sass/main.scss ./assets/css/styles.css --watch"
+    "sass": "sass ./sass/main.scss ./assets/css/styles.css --watch",
+    "prefix": "postcss ./assets/css/styles.css --use autoprefixer -d ./assets/css/prefixed/"
   },
   "repository": {
     "type": "git",
@@ -13,6 +14,7 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "browserslist": "last 4 versions",
   "bugs": {
     "url": "https://github.com/Sylviane-07/P4-OhMyFood/issues"
   },

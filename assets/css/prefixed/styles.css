@@ -1,0 +1,80 @@
+/*! minireset.css v0.0.6 | MIT License | github.com/jgthms/minireset.css */
+html, body, p, ol, ul, li, dl, dt, dd, blockquote, figure, fieldset, legend, textarea, pre, iframe, hr, h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: 100%;
+  font-weight: normal;
+}
+
+ul {
+  list-style: none;
+}
+
+button, input, select {
+  margin: 0;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+img, video {
+  height: auto;
+  max-width: 100%;
+}
+
+iframe {
+  border: 0;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+td, th {
+  padding: 0;
+}
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.welcome {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uLy4uLy4uL3Nhc3MvQmFzZS9fcmVzZXQuc2NzcyIsIi4uL3N0eWxlcy5jc3MiLCIuLi8uLi8uLi9zYXNzL21haW4uc2NzcyIsIi4uLy4uLy4uL3Nhc3MvVXRpbHMvX21peGluLnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUEsMEVBQUE7QUFBMkU7RUFBeUcsU0FBQTtFQUFTLFVBQUE7QUNJN0w7O0FESnVNO0VBQWtCLGVBQUE7RUFBZSxtQkFBQTtBQ1N4Tzs7QURUMlA7RUFBRyxnQkFBQTtBQ2E5UDs7QURiOFE7RUFBb0IsU0FBQTtBQ2lCbFM7O0FEakIyUztFQUFLLDhCQUFBO1VBQUEsc0JBQUE7QUNxQmhUOztBRHJCc1U7RUFBcUIsMkJBQUE7VUFBQSxtQkFBQTtBQ3lCM1Y7O0FEekI4VztFQUFVLFlBQUE7RUFBWSxlQUFBO0FDOEJwWTs7QUQ5Qm1aO0VBQU8sU0FBQTtBQ2tDMVo7O0FEbENtYTtFQUFNLHlCQUFBO0VBQXlCLGlCQUFBO0FDdUNsYzs7QUR2Q21kO0VBQU0sVUFBQTtBQzJDemQ7O0FDdENBO0VDSkksb0JBQUE7RUFBQSxvQkFBQTtFQUFBLGFBQUE7RUFDQSw4QkRJNEI7RUNKNUIsNkJESTRCO01DSjVCLHVCREk0QjtVQ0o1QixtQkRJNEI7RUNINUIsd0JBSHlDO01BR3pDLHFCQUh5QztVQUd6Qyx1QkFIeUM7RUFJekMseUJBSnlEO01BSXpELHNCQUp5RDtVQUl6RCxtQkFKeUQ7QUZrRDdEOztBQ3pDQTtFQ1JJLG9CQUFBO0VBQUEsb0JBQUE7RUFBQSxhQUFBO0VBQ0EsNEJBRnVCO0VBRXZCLDZCQUZ1QjtNQUV2QiwwQkFGdUI7VUFFdkIsc0JBRnVCO0VBR3ZCLHdCQUh5QztNQUd6QyxxQkFIeUM7VUFHekMsdUJBSHlDO0VBSXpDLHlCQUp5RDtNQUl6RCxzQkFKeUQ7VUFJekQsbUJBSnlEO0FGeUQ3RCIsImZpbGUiOiJzdHlsZXMuY3NzIn0= */
