@@ -49,12 +49,84 @@ td, th {
   justify-content: center;
   align-items: center;
 }
+.header__logo {
+  width: 11rem;
+  margin: 0.875rem;
+}
+
+.btn {
+  font-weight: 500;
+  font-size: 1rem;
+  text-decoration: none;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+}
+
+.btn {
+  background: linear-gradient(357deg, #9356DC -5.2%, #FF79DA 110.74%);
+  padding: 0.813rem 1.172rem;
+  color: #FFFFFF;
+  border-radius: 25px;
+}
+
+:root {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 1rem;
+}
 
 .welcome {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding-bottom: 3.75rem;
+  background-color: #F6F6F6;
+}
+.welcome__header {
+  width: 100%;
+  height: 3.125rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: #EAEAEA;
+  box-shadow: inset rgba(0, 0, 0, 0.5) 0px 5px 6px -6px;
+}
+.welcome__searchbar {
+  margin: 0.5rem;
+  background-color: transparent;
+  border: transparent;
+}
+.welcome__icon {
+  margin: 0.5rem 0.5rem 0.5rem 2.5rem;
+  color: #353535;
+}
+.welcome__text-wrapper {
+  width: 76%;
+  text-align: center;
+  margin: 1.875rem;
+}
+.welcome__title {
+  font-weight: 700;
+  font-size: 1.5rem;
+  padding-bottom: 0.938rem;
+}
+.welcome__subtitle {
+  color: #353535;
+}
+
+.welcome__searchbar:focus {
+  outline-style: none;
+}
+.welcome__searchbar:focus::placeholder {
+  color: transparent;
+}
+
+::placeholder {
+  font-weight: 500;
+  font-size: 1rem;
+  font-family: "Roboto", sans-serif;
+  color: #353535;
 }
 
 /*# sourceMappingURL=styles.css.map */
