@@ -4,6 +4,10 @@
 @import "../Components/buttons";
 @import "../Utils/mixin";
 
+//HOMEPAGE STYLING
+
+
+//SECTION WELCOME
 .welcome {
   @include flexbox();
   padding-bottom: 3.75rem;
@@ -50,4 +54,54 @@
   @include font-500;
   font-family: $base-font-family;
   color: $dark-neutral-clr;
+}
+
+
+//SECTION BOOKING
+.booking{
+  @include flexbox ($justify: space-around, $align: flex-start);
+  margin: 3rem 0.5rem;
+  background-color: $white;
+  &__title{
+    @include font-700;
+    margin: 1.25rem 0.5rem;
+  }
+  &__btn-list{
+    margin-top: 20px;
+    margin-bottom: 40px;
+    counter-reset: list-number;
+    width: 100%;
+    @include flexbox;
+    gap: 25px;
+  }
+  &__list-item{
+    width: 95%;
+    max-width: 20.125rem;
+    height: 72px;
+    border: 1px solid $light-bg-clr;
+    @include font-500;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+    border-radius: 20px;
+    background-color: $light-bg-clr;
+    @include flexbox($direction:row);
+  }
+}
+
+.booking__list-item::before{
+    counter-increment: list-number;
+    content: counter(list-number);
+    margin-right: 10px;
+    margin-bottom: 10px;
+    width: 24px;
+    height: 24px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    @include font-500(0.875rem);
+    background-color: $primary-color;
+    color: $white;
+    border-radius: 50%;
+    position: relative;
+    right: 10px;
+    top: 5px;
 }

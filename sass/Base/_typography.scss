@@ -31,3 +31,11 @@ $large-font: 1.5rem;
     font-size: 1.75rem;
     font-style: italic;
 }
+
+//Root settings
+
+:root{
+    font-family: $base-font-family;
+    @include font-300;
+}
+

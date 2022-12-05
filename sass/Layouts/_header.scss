@@ -1,9 +1,9 @@
 @import "../Utils/mixin";
 
-.header{
-    @include flexbox($direction:row);
-    &__logo{
-        width: 11rem;
-        margin: 0.875rem;
-    }
+.header {
+  @include flexbox($direction: row);
+  &__logo {
+    width: 11rem;
+    margin: 0.875rem;
+  }
 }
