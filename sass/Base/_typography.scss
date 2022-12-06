@@ -5,30 +5,36 @@ $restaurant-name-font-family: 'Shrikhand', cursive;
 
 $default-size: 1rem;
 $large-font: 1.5rem;
+$xl-font-size: 1.75rem;
+$default-txt-clr: #000;
+$weight:700; 
 
 //Font-weight & font-size mixins
 
-@mixin font-300($size: $default-size) {
+@mixin font-300($size: $default-size, $color:$default-txt-clr) {
     font-weight: 300;
     font-size: $size;
+    color: $color;
 }
 
-@mixin font-500($size: $default-size) {
+@mixin font-500($size: $default-size, $color:$default-txt-clr) {
     font-weight: 500;
     font-size: $size;
+    color: $color;
 }
 
-@mixin font-700($size: $large-font) {
+@mixin font-700($size: $large-font, $color:$default-txt-clr) {
     font-weight: 700;
     font-size: $size;
+    color: $color;
 }
 
 // Restaurant menu page title
 
-@mixin menu-page-title {
+@mixin menu-page-title($size: $xl-font-size, $weight: $weight) {
     font-family: $restaurant-name-font-family;
-    font-weight: 700;
-    font-size: 1.75rem;
+    font-weight: $weight;
+    font-size: $size;
     font-style: italic;
 }
 
@@ -39,3 +45,6 @@ $large-font: 1.5rem;
     @include font-300;
 }
 
+a{ 
+    color: $default-txt-clr;
+}
