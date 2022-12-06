@@ -225,19 +225,21 @@ td, th {
   flex-direction: column;
   justify-content: space-around;
   align-items: flex-start;
-  margin: 3rem 0.5rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
   background-color: #FFFFFF;
 }
 .booking__title {
   font-weight: 700;
   font-size: 1.5rem;
-  margin: 1.25rem 0.5rem;
+  margin: 1.25rem;
 }
 .booking__btn-list {
   margin-top: 20px;
   margin-bottom: 40px;
+  margin-left: 5px;
   counter-reset: list-number;
-  width: 100%;
+  width: 98%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -278,6 +280,50 @@ td, th {
   position: relative;
   right: 10px;
   top: 5px;
+}
+
+.restaurants {
+  background-color: #F6F6F6;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+.restaurants__title {
+  font-weight: 700;
+  font-size: 1.5rem;
+  margin: 1.25rem;
+}
+.restaurants__cards-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.8rem;
+}
+
+.card {
+  width: 90%;
+  background-color: #FFFFFF;
+  border-radius: 15px;
+}
+.card__img-wrapper {
+  height: 180px;
+  overflow: hidden;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+.card__img {
+  width: 100%;
+  object-fit: cover;
+  height: 233px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  position: relative;
+  bottom: 55px;
 }
 
 /*# sourceMappingURL=styles.css.map */

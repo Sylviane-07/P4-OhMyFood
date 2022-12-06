@@ -60,17 +60,19 @@
 //SECTION BOOKING
 .booking{
   @include flexbox ($justify: space-around, $align: flex-start);
-  margin: 3rem 0.5rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
   background-color: $white;
   &__title{
     @include font-700;
-    margin: 1.25rem 0.5rem;
+    margin: 1.25rem;
   }
   &__btn-list{
     margin-top: 20px;
     margin-bottom: 40px;
+    margin-left: 5px;
     counter-reset: list-number;
-    width: 100%;
+    width: 98%;
     @include flexbox;
     gap: 25px;
   }
@@ -104,4 +106,44 @@
     position: relative;
     right: 10px;
     top: 5px;
+}
+
+//SECTION RESTAURANTS
+
+.restaurants{
+  background-color: $light-bg-clr;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  @include flexbox($justify:space-around, $align: flex-start);
+  &__title{
+    @include font-700;
+    margin: 1.25rem;
+  }
+  &__cards-container{
+    width: 100%;
+    @include flexbox;
+    gap: 1.8rem;
+  }
+}
+
+.card{
+  width: 90%;
+  background-color: $white;
+  border-radius: 15px;
+  &__img-wrapper{
+    height: 180px;
+    overflow: hidden;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    
+  }
+  &__img{
+    width: 100%;
+    object-fit: cover;
+    height: 233px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    position: relative;
+    bottom: 55px;
+  }
 }
