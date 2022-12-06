@@ -1,9 +1,3 @@
-@import "../Base/typography";
-@import "../Base/colors";
-@import "../Layouts/header";
-@import "../Components/buttons";
-@import "../Utils/mixin";
-
 //HOMEPAGE STYLING
 
 
@@ -123,27 +117,5 @@
     width: 100%;
     @include flexbox;
     gap: 1.8rem;
-  }
-}
-
-.card{
-  width: 90%;
-  background-color: $white;
-  border-radius: 15px;
-  &__img-wrapper{
-    height: 180px;
-    overflow: hidden;
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
-    
-  }
-  &__img{
-    width: 100%;
-    object-fit: cover;
-    height: 233px;
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
-    position: relative;
-    bottom: 55px;
   }
 }

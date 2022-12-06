@@ -43,10 +43,19 @@ td, th {
   padding: 0;
 }
 
+a {
+  text-decoration: none;
+}
+
 :root {
   font-family: "Roboto", sans-serif;
   font-weight: 300;
   font-size: 1rem;
+  color: #000;
+}
+
+a {
+  color: #000;
 }
 
 .header {
@@ -60,15 +69,28 @@ td, th {
   margin: 0.875rem;
 }
 
-:root {
-  font-family: "Roboto", sans-serif;
-  font-weight: 300;
-  font-size: 1rem;
+.footer {
+  background-color: #353535;
+  padding: 1.2rem;
+}
+.footer__title {
+  font-family: "Shrikhand", cursive;
+  font-weight: 400;
+  font-size: 1.125rem;
+  font-style: italic;
+  margin-bottom: 1rem;
+  color: #FFFFFF;
+}
+
+.list__element {
+  font-weight: 400;
+  margin: 8px auto;
 }
 
 .btn {
   font-weight: 500;
   font-size: 1rem;
+  color: #000;
   text-decoration: none;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
 }
@@ -104,65 +126,58 @@ td, th {
   margin-left: -10px;
 }
 
-:root {
-  font-family: "Roboto", sans-serif;
-  font-weight: 300;
-  font-size: 1rem;
-}
-
-.header {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-}
-.header__logo {
-  width: 11rem;
-  margin: 0.875rem;
-}
-
-:root {
-  font-family: "Roboto", sans-serif;
-  font-weight: 300;
-  font-size: 1rem;
-}
-
-.btn {
-  font-weight: 500;
-  font-size: 1rem;
-  text-decoration: none;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
-}
-
-.btn--gradient {
-  background: linear-gradient(357deg, #9356DC -5.2%, #FF79DA 110.74%);
-  padding: 0.813rem 1.172rem;
-  color: #FFFFFF;
-  border-radius: 25px;
-}
-
-.btn--gradient:hover {
-  padding: 0.9rem 1.25rem;
-}
-.btn--booking {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-items: center;
-  width: 100%;
-  height: 100%;
-  border-radius: 20px;
-  padding-left: 40px;
-  margin-left: -34px;
+.fa-heart {
+  font-size: 1.39rem;
+  margin: 10px;
   color: #000;
 }
-.btn--booking:hover {
-  background-color: #F5EDFF;
+
+.card {
+  width: 90%;
+  background-color: #FFFFFF;
+  border-radius: 15px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
 }
-.btn--icon {
-  color: #7E7E7E;
-  margin-right: 22px;
-  margin-left: -10px;
+.card__img-wrapper {
+  height: 180px;
+  overflow: hidden;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+.card__img-wrapper--new-tag {
+  z-index: 1;
+  position: relative;
+  width: 80px;
+  height: 29px;
+  color: #008766;
+  background-color: #99E2D0;
+}
+.card__img {
+  width: 100%;
+  object-fit: cover;
+  height: 233px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  position: relative;
+  bottom: 55px;
+}
+.card__img--align {
+  bottom: 83px;
+}
+.card__label {
+  padding: 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.card__title {
+  font-weight: 700;
+  font-size: 1.125rem;
+  color: #000;
+}
+.card__subtitle {
+  font-size: 1.063rem;
 }
 
 .welcome {
@@ -200,6 +215,7 @@ td, th {
 .welcome__title {
   font-weight: 700;
   font-size: 1.5rem;
+  color: #000;
   padding-bottom: 0.938rem;
 }
 .welcome__subtitle {
@@ -216,6 +232,7 @@ td, th {
 ::placeholder {
   font-weight: 500;
   font-size: 1rem;
+  color: #000;
   font-family: "Roboto", sans-serif;
   color: #353535;
 }
@@ -232,6 +249,7 @@ td, th {
 .booking__title {
   font-weight: 700;
   font-size: 1.5rem;
+  color: #000;
   margin: 1.25rem;
 }
 .booking__btn-list {
@@ -253,6 +271,7 @@ td, th {
   border: 1px solid #F6F6F6;
   font-weight: 500;
   font-size: 1rem;
+  color: #000;
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
   border-radius: 20px;
   background-color: #F6F6F6;
@@ -274,6 +293,7 @@ td, th {
   justify-content: center;
   font-weight: 500;
   font-size: 0.875rem;
+  color: #000;
   background-color: #9356DC;
   color: #FFFFFF;
   border-radius: 50%;
@@ -294,6 +314,7 @@ td, th {
 .restaurants__title {
   font-weight: 700;
   font-size: 1.5rem;
+  color: #000;
   margin: 1.25rem;
 }
 .restaurants__cards-container {
@@ -303,27 +324,6 @@ td, th {
   justify-content: center;
   align-items: center;
   gap: 1.8rem;
-}
-
-.card {
-  width: 90%;
-  background-color: #FFFFFF;
-  border-radius: 15px;
-}
-.card__img-wrapper {
-  height: 180px;
-  overflow: hidden;
-  border-top-left-radius: 15px;
-  border-top-right-radius: 15px;
-}
-.card__img {
-  width: 100%;
-  object-fit: cover;
-  height: 233px;
-  border-top-left-radius: 15px;
-  border-top-right-radius: 15px;
-  position: relative;
-  bottom: 55px;
 }
 
 /*# sourceMappingURL=styles.css.map */
