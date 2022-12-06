@@ -131,10 +131,14 @@ a {
 .btn--booking:hover {
   background-color: #F5EDFF;
 }
+.btn--booking:hover i {
+  color: #9356DC;
+}
 .btn--icon {
   color: #7E7E7E;
   margin-right: 22px;
   margin-left: -10px;
+  font-size: 1.125rem;
 }
 
 .fa-heart {

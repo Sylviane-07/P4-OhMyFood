@@ -36,11 +36,16 @@
     &:hover{
       background-color: $booking-btn-hover-clr;
     }
+    &:hover i{
+      color: $primary-color;
+    }
+  
   }
   &--icon{
     color: $booking-icon-clr;
     margin-right: 22px;
     margin-left: -10px;
+    font-size: 1.125rem;
   }
 }
 
