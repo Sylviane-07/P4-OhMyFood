@@ -1,0 +1,19 @@
+//FOOTER LAYOUT FOR ALL PAGES
+
+
+.footer{
+    background-color: $dark-neutral-clr;
+    padding: 1.2rem;
+    &__title{
+        @include menu-page-title($size: 1.125rem, $weight: 400);
+        margin-bottom: 1rem;
+        color: $white;
+    }
+}
+
+.list{
+    &__element{
+       font-weight: 400;
+       margin: 8px auto;
+    }
+}
