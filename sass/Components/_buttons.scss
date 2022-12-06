@@ -1,8 +1,3 @@
-@import "../Utils/mixin";
-@import "../Base/typography";
-@import "../Base/colors";
-
-
 //btn base
 %btn-base {
   @include font-500;
