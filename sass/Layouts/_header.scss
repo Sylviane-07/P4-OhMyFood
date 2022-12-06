@@ -4,6 +4,12 @@
   @include flexbox($direction: row);
   &__logo {
     width: 11rem;
-    margin: 0.875rem;
+    margin: 0.875rem 0;
+  }
+  &--menu-page{
+    gap: 40px;
+  }
+  &--arrow-anchor{
+    margin-left: -40px;
   }
 }
