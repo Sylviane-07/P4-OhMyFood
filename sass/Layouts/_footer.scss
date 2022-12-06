@@ -15,5 +15,16 @@
     &__element{
        font-weight: 400;
        margin: 8px auto;
+       &--icon-utensils{
+        margin-right: 14px;
+        font-size: 14px;
+       }
+       &--icon-handshake{
+        margin-right: 10px;
+        font-size: 12px;
+       }
+    }
+    &__anchor{
+        color: $white;
     }
 }
