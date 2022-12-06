@@ -12,12 +12,18 @@
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
     &--new-tag{
+      @include font-500(0.875rem);
         z-index: 1;
         position: relative;
         width: 80px;
         height: 29px;
         color: $contrast-clr-txt;
         background-color: $contrast-color;
+        left: 245px;
+        top: 17px;
+        text-align: center;
+        padding-top: 6px;
+        border-radius: 2px;
     }
   }
   &__img{

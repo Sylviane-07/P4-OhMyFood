@@ -160,12 +160,20 @@ a {
   border-top-right-radius: 15px;
 }
 .card__img-wrapper--new-tag {
+  font-weight: 500;
+  font-size: 0.875rem;
+  color: #000;
   z-index: 1;
   position: relative;
   width: 80px;
   height: 29px;
   color: #008766;
   background-color: #99E2D0;
+  left: 245px;
+  top: 17px;
+  text-align: center;
+  padding-top: 6px;
+  border-radius: 2px;
 }
 .card__img {
   width: 100%;
