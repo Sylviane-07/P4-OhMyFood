@@ -11,20 +11,44 @@
     <title>Oh My Food</title>
 </head>
 <body>
-    <header class="header">
-        <a href="../index.html"><i class="fa-solid fa-arrow-left"></i></a>
-        <img src="../assets/images/logo/ohmyfood.png" alt="ohmyfood logo">
+    <header class="header header--menu-page">
+        <a class="header__arrow-anchor" href="../index.html"><i class="fa-solid fa-arrow-left"></i></a>
+        <img class="header__logo" src="../assets/images/logo/ohmyfood.png" alt="ohmyfood logo">
     </header>
     <main>
-        
+        <section class="restaurant-display">
+            <img src="../assets/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="restaurant à la française" class="restaurant-display__img">
+        </section>
+        <section class="menu">
+            <h1 class="menu__title"></h1>
+            <section class="menu__starter">
+                <h2 class="menu__subtitle"></h2>
+                <div class="menu__meal-label"></div>
+                <div class="menu__meal-label"></div>
+                <div class="menu__meal-label"></div>
+            </section>
+            <section class="menu__main-course">
+                <h2 class="menu__subtitle"></h2>
+                <div class="menu__meal-label"></div>
+                <div class="menu__meal-label"></div>
+                <div class="menu__meal-label"></div>
+            </section>
+            <section class="menu__dessert">
+                <h2 class="menu__subtitle"></h2>
+                <div class="menu__meal-label"></div>
+                <div class="menu__meal-label"></div>
+                <div class="menu__meal-label"></div>
+            </section>
+            <a class="btn btn--gradient" href="#" role="button">Commander</a>
+        </section>
     </main>
-    <footer>
-        <h3>Oh My Food</h3>
-        <ul>
-            <li><a href="#"><i class="fa-solid fa-utensils"></i>Proposer un restaurant</a></li>
-            <li><a href="#"><i class="fa-solid fa-handshake-angle"></i>Devenir partenaire</a></li>
-            <li><a href="#">Mentions légales</a></li>
-            <li><a href="mailto:email@example.com">Contact</a></li>
+     <footer class="footer">
+        <h3 class="footer__title">ohmyfood</h3>
+        <ul class="footer__list list">
+            <li class="list__element"><a class="list__anchor" href="#"><i class="fa-solid fa-utensils list__element--icon-utensils"></i>Proposer un restaurant</a></li>
+            <li class="list__element"><a class="list__anchor" href="#"><i class="fa-solid fa-handshake-angle list__element--icon-handshake"></i>Devenir partenaire</a></li>
+            <li class="list__element"><a class="list__anchor" href="#">Mentions légales</a></li>
+            <li class="list__element"><a class="list__anchor" href="mailto:email@example.com">Contact</a></li>
         </ul>
     </footer>
 </body>
