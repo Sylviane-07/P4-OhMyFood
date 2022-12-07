@@ -1,4 +1,7 @@
 //Restaurant menu page __ MENU LAYOUT
+main{
+    background-color: $light-bg-clr;
+}
 .menu{
     z-index: 1;
     position: relative;
@@ -46,5 +49,13 @@
     //MENU _ DESSERT
     &__dessert{
        @extend %menu-layout;
+    }
+    //ORDER BTN
+    &__order-btn-wrapper{
+        width: 100%;
+        @include flexbox($direction:row)
+    }
+    &__order-btn{
+        margin-top: 20px;
     }
 }
