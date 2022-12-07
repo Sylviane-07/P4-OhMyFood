@@ -1,0 +1,6 @@
+//MENU LAYOUT 
+%menu-layout{
+     @include flexbox($align:flex-start);
+        gap: 12px;
+        margin: 20px auto;
+}
