@@ -1,6 +1,6 @@
 //Restaurant menu page __ MENU LAYOUT
 main{
-    background-color: $light-bg-clr;
+    margin-bottom: -50px;
 }
 .menu{
     z-index: 1;
@@ -56,6 +56,6 @@ main{
         @include flexbox($direction:row)
     }
     &__order-btn{
-        margin-top: 20px;
+        margin: 20px;
     }
 }

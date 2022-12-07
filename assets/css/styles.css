@@ -127,7 +127,7 @@ a {
 }
 
 main {
-  background-color: #F7F7F7;
+  margin-bottom: -50px;
 }
 
 .menu {
@@ -184,7 +184,7 @@ main {
   align-items: center;
 }
 .menu__order-btn {
-  margin-top: 20px;
+  margin: 20px;
 }
 
 .btn {
