@@ -2,6 +2,7 @@
 @import "Base/typography";
 @import "Base/colors";
 @import "Utils/mixin";
+@import "Utils/placeholder.scss";
 @import "Layouts/header";
 @import "Layouts/footer";
 @import "Layouts/menu";
@@ -13,9 +14,11 @@
 //RESTAURANTS MENU PAGE
 .restaurant-display{
     width: 100%;
+    z-index: 0;
     &__img{
         width: 100%;
         height: 275px;
         object-fit: cover;
+        margin-bottom: -5px;
     }
 }
