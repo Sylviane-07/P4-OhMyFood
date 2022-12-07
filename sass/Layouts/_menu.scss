@@ -1,2 +1,50 @@
 //Restaurant menu page __ MENU LAYOUT
-
+.menu{
+    z-index: 1;
+    position: relative;
+    bottom: 50px;
+    background-color: #F7F7F7;
+    border-radius: 40px 40px 0px 0px;
+    padding: 30px 17px;
+    &__title-icon-wrapper{
+        @include flexbox($direction:row, $justify:space-between);
+        padding-right: 10px;
+        margin-bottom: 10px;
+    }
+    &__title{
+        @include menu-page-title
+    }
+    //MENU _ STARTER
+    &__starter{
+        @extend %menu-layout;
+    }
+    &__subtitle{
+        @extend %uppercase-underline; 
+    }
+    //MENU LABEL STYLE
+    &__meal-label{
+        @include flexbox($direction:row, $justify:space-between, $align:end);
+        background-color: $white;
+        box-shadow: 0px 4.01149px 15.0431px rgba(0, 0, 0, 0.1);
+        border-radius: 15.0431px;
+        width: 100%;
+        padding: 10px;
+    }
+    &__meal-title{
+        @include font-500($size:1.125rem);
+    }
+    &__meal-subtitle{
+        font-size: 0.938rem;
+    }
+    &__meal-price{
+        @include font-700($size:00.938rem)
+    }
+    //MENU _ MAIN-COURSE
+    &__main-course{
+        @extend %menu-layout;
+    }
+    //MENU _ DESSERT
+    &__dessert{
+       @extend %menu-layout;
+    }
+}
