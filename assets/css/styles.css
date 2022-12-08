@@ -93,7 +93,7 @@ a {
 }
 .header__arrow-anchor {
   position: relative;
-  top: 40px;
+  top: 30px;
   margin: 1rem;
 }
 
@@ -162,6 +162,9 @@ a {
   border-radius: 15.0431px;
   width: 100%;
   padding: 10px;
+}
+.menu__text-wrapper {
+  width: 90%;
 }
 .menu__meal-title {
   font-weight: 500;
@@ -289,6 +292,8 @@ a {
   z-index: 2;
   position: relative;
   background-color: white;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
 }
 .card__title {
   font-weight: 700;
@@ -443,6 +448,11 @@ a {
   justify-content: center;
   align-items: center;
   gap: 1.8rem;
+}
+
+:root.html-menu-page {
+  font-size: 73%;
+  white-space: nowrap;
 }
 
 .restaurant-display {

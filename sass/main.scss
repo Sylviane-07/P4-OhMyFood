@@ -11,6 +11,12 @@
 @import "Components/restaurant-cards";
 @import "Pages/Homepage";
 
+//ROOT OVERWRITE _ (MENU PAGE) FONT-SIZE FOR SMALLER SCREENS
+:root.html-menu-page{
+    font-size: 73%;
+    white-space: nowrap;
+}
+
 //RESTAURANTS MENU PAGE
 .restaurant-display{
     width: 100%;

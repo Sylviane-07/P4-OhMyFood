@@ -45,6 +45,8 @@
     z-index: 2;
     position: relative;
     background-color: white;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
   }
   &__title{
     @include font-700(1.125rem);
