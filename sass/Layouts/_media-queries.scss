@@ -1,0 +1,41 @@
+@mixin smaller-phone{
+    @media screen and (max-width: 319px) {
+        @content;
+    }
+}
+
+@mixin phone{
+   @media screen and (min-width:320px) and (max-width:374px) {
+    @content;
+   }
+}
+
+@mixin larger-phone{
+    @media screen and (min-width:375px) and (max-width:767px) {
+        @content;
+    }
+}
+
+@mixin tablet{
+    @media screen and (min-width:768px) and (max-width: 999px) {
+        @content;
+    }
+}
+
+@mixin desktop{
+    @media screen and (min-width:1000px) {
+        @content;
+    }
+}
+
+
+//ROOT OVERWRITE _ (MENU PAGE) FONT-SIZE FOR SMALLER SCREENS
+:root.html-menu-page{
+    @include smaller-phone{
+    font-size: 73%;
+    white-space: nowrap;
+    }
+    @include phone{
+        font-size: 85%;
+    }
+}

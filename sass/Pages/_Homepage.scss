@@ -65,10 +65,19 @@
     margin-top: 20px;
     margin-bottom: 40px;
     margin-left: 5px;
+    padding-left: 2px;
     counter-reset: list-number;
     width: 98%;
     @include flexbox;
     gap: 25px;
+    @include desktop{
+      flex-direction: row;
+      margin-left: auto;
+      margin-right: auto;
+      padding-left: 10px;
+      gap: 50px;
+      
+    }
   }
   &__list-item{
     width: 95%;
@@ -117,5 +126,13 @@
     width: 100%;
     @include flexbox;
     gap: 1.8rem;
+    @include tablet{
+      @include flexbox($direction:row, $justify:space-evenly);
+      flex-wrap: wrap;
+    }
+    @include desktop{
+      flex-direction: row;
+      padding: 14px;
+    }
   }
 }

@@ -8,6 +8,14 @@
         @include menu-page-title($size: 1.125rem);
         margin-bottom: 1rem;
         color: $white;
+        @include desktop{
+            margin-bottom: 0;
+            margin-right: 80px;
+        }
+    }
+    @include desktop{
+        @include flexbox($direction:row-reverse, $justify: flex-start);
+        gap: 65px;
     }
 }
 
@@ -26,5 +34,9 @@
     }
     &__anchor{
         color: $white;
+    }
+    @include desktop{
+        display: flex;
+        gap: 65px;
     }
 }
