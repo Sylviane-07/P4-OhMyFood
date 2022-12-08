@@ -237,7 +237,7 @@ a {
 }
 
 .card {
-  width: 90%;
+  width: 92%;
   background-color: #FFFFFF;
   border-radius: 15px;
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
@@ -271,14 +271,13 @@ a {
 .card__img {
   width: 100%;
   object-fit: cover;
-  height: 233px;
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
   position: relative;
-  bottom: 55px;
 }
 .card__img--align {
-  bottom: 105px;
+  bottom: 50px;
+  height: 164px;
 }
 .card__label {
   padding: 15px;
@@ -286,6 +285,10 @@ a {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  margin-top: -7px;
+  z-index: 2;
+  position: relative;
+  background-color: white;
 }
 .card__title {
   font-weight: 700;

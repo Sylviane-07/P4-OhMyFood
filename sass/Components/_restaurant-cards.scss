@@ -2,7 +2,7 @@
 
 
 .card{
-  width: 90%;
+  width: 92%;
   background-color: $white;
   border-radius: 15px;
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
@@ -30,18 +30,21 @@
   &__img{
     width: 100%;
     object-fit: cover;
-    height: 233px;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
     position: relative;
-    bottom: 55px;
     &--align{
-        bottom: 105px;
+        bottom: 50px;
+        height: 164px;
     }
   }
   &__label{
     padding: 15px;
     @include flexbox($direction: row, $justify:space-between);
+    margin-top: -7px;
+    z-index: 2;
+    position: relative;
+    background-color: white;
   }
   &__title{
     @include font-700(1.125rem);
