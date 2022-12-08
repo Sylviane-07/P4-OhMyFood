@@ -73,6 +73,120 @@ a {
   margin: 20px auto;
 }
 
+.btn {
+  font-weight: 500;
+  font-size: 1rem;
+  color: #000;
+  text-decoration: none;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+}
+
+.btn--gradient {
+  background: linear-gradient(357deg, #9356DC -5.2%, #FF79DA 110.74%);
+  padding: 0.813rem 1.172rem;
+  color: #FFFFFF;
+  border-radius: 25px;
+}
+
+.btn--gradient:hover {
+  padding: 0.9rem 1.25rem;
+}
+.btn--booking {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  padding-left: 40px;
+  margin-left: -34px;
+  color: #000;
+}
+.btn--booking:hover {
+  background-color: #F5EDFF;
+}
+.btn--booking:hover i {
+  color: #9356DC;
+}
+.btn--icon {
+  color: #7E7E7E;
+  margin-right: 22px;
+  margin-left: -10px;
+  font-size: 1.125rem;
+}
+
+.fa-heart {
+  font-size: 1.39rem;
+  margin: 10px;
+  color: #000;
+}
+
+.card {
+  width: 92%;
+  background-color: #FFFFFF;
+  border-radius: 15px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+}
+.card__img-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: inherit;
+  align-items: flex-end;
+  gap: 10px;
+  height: 170px;
+  overflow: hidden;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+.card__img-wrapper--new-tag {
+  font-weight: 500;
+  font-size: 0.875rem;
+  color: #000;
+  z-index: 1;
+  position: relative;
+  width: 80px;
+  height: 29px;
+  color: #008766;
+  background-color: #99E2D0;
+  text-align: center;
+  padding: 5px;
+  border-radius: 2px;
+  margin-right: 15px;
+}
+.card__img {
+  width: 100%;
+  object-fit: cover;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  position: relative;
+}
+.card__img--align {
+  bottom: 50px;
+  height: 164px;
+}
+.card__label {
+  padding: 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: -7px;
+  z-index: 2;
+  position: relative;
+  background-color: white;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+.card__title {
+  font-weight: 700;
+  font-size: 1.125rem;
+  color: #000;
+}
+.card__subtitle {
+  font-size: 1.063rem;
+}
+
 .header {
   display: flex;
   flex-direction: row;
@@ -188,120 +302,6 @@ a {
 }
 .menu__order-btn {
   margin: 20px;
-}
-
-.btn {
-  font-weight: 500;
-  font-size: 1rem;
-  color: #000;
-  text-decoration: none;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
-}
-
-.btn--gradient {
-  background: linear-gradient(357deg, #9356DC -5.2%, #FF79DA 110.74%);
-  padding: 0.813rem 1.172rem;
-  color: #FFFFFF;
-  border-radius: 25px;
-}
-
-.btn--gradient:hover {
-  padding: 0.9rem 1.25rem;
-}
-.btn--booking {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-items: center;
-  width: 100%;
-  height: 100%;
-  border-radius: 20px;
-  padding-left: 40px;
-  margin-left: -34px;
-  color: #000;
-}
-.btn--booking:hover {
-  background-color: #F5EDFF;
-}
-.btn--booking:hover i {
-  color: #9356DC;
-}
-.btn--icon {
-  color: #7E7E7E;
-  margin-right: 22px;
-  margin-left: -10px;
-  font-size: 1.125rem;
-}
-
-.fa-heart {
-  font-size: 1.39rem;
-  margin: 10px;
-  color: #000;
-}
-
-.card {
-  width: 92%;
-  background-color: #FFFFFF;
-  border-radius: 15px;
-  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
-}
-.card__img-wrapper {
-  display: flex;
-  flex-direction: column;
-  justify-content: inherit;
-  align-items: flex-end;
-  gap: 10px;
-  height: 170px;
-  overflow: hidden;
-  border-top-left-radius: 15px;
-  border-top-right-radius: 15px;
-}
-.card__img-wrapper--new-tag {
-  font-weight: 500;
-  font-size: 0.875rem;
-  color: #000;
-  z-index: 1;
-  position: relative;
-  width: 80px;
-  height: 29px;
-  color: #008766;
-  background-color: #99E2D0;
-  text-align: center;
-  padding: 5px;
-  border-radius: 2px;
-  margin-right: 15px;
-}
-.card__img {
-  width: 100%;
-  object-fit: cover;
-  border-top-left-radius: 15px;
-  border-top-right-radius: 15px;
-  position: relative;
-}
-.card__img--align {
-  bottom: 50px;
-  height: 164px;
-}
-.card__label {
-  padding: 15px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  margin-top: -7px;
-  z-index: 2;
-  position: relative;
-  background-color: white;
-  border-bottom-left-radius: 15px;
-  border-bottom-right-radius: 15px;
-}
-.card__title {
-  font-weight: 700;
-  font-size: 1.125rem;
-  color: #000;
-}
-.card__subtitle {
-  font-size: 1.063rem;
 }
 
 .welcome {

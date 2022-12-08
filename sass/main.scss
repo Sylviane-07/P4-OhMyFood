@@ -3,12 +3,13 @@
 @import "Base/colors";
 @import "Utils/mixin";
 @import "Utils/placeholder.scss";
-@import "Layouts/header";
-@import "Layouts/footer";
-@import "Layouts/menu";
 @import "Components/buttons";
 @import "Components/heart-icon";
 @import "Components/restaurant-cards";
+@import "Layouts/header";
+@import "Layouts/footer";
+@import "Layouts/menu";
+@import "Layouts/media-queries";
 @import "Pages/Homepage";
 
 //ROOT OVERWRITE _ (MENU PAGE) FONT-SIZE FOR SMALLER SCREENS
