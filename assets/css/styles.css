@@ -237,6 +237,19 @@ a {
   background-color: #353535;
   padding: 1.2rem;
 }
+@media screen and (min-width: 1000px) {
+  .footer__container {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 60px;
+    width: 100%;
+    max-width: 1150px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
 .footer__title {
   font-family: "Shrikhand", cursive;
   font-weight: 400;
@@ -248,16 +261,7 @@ a {
 @media screen and (min-width: 1000px) {
   .footer__title {
     margin-bottom: 0;
-    margin-right: 80px;
-  }
-}
-@media screen and (min-width: 1000px) {
-  .footer {
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: flex-start;
-    align-items: center;
-    gap: 65px;
+    margin-right: 60px;
   }
 }
 
@@ -279,7 +283,7 @@ a {
 @media screen and (min-width: 1000px) {
   .list {
     display: flex;
-    gap: 65px;
+    gap: 60px;
   }
 }
 
@@ -356,6 +360,15 @@ a {
 }
 .menu__order-btn {
   margin: 20px;
+}
+
+@media screen and (min-width: 1000px) {
+  .main__homepage {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: inherit;
+  }
 }
 
 .welcome {
@@ -446,6 +459,7 @@ a {
 @media screen and (min-width: 1000px) {
   .booking__btn-list {
     flex-direction: row;
+    justify-content: space-between;
     margin-left: auto;
     margin-right: auto;
     padding-left: 10px;
@@ -465,8 +479,16 @@ a {
   background-color: #F7F7F7;
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
+}
+@media screen and (min-width: 1000px) {
+  .booking {
+    width: 100%;
+    max-width: 1150px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 .booking__list-item::before {
@@ -499,6 +521,14 @@ a {
   justify-content: space-around;
   align-items: flex-start;
 }
+@media screen and (min-width: 1000px) {
+  .restaurants__container {
+    width: 100%;
+    max-width: 1150px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
 .restaurants__title {
   font-weight: 700;
   font-size: 1.5rem;
@@ -526,14 +556,6 @@ a {
   .restaurants__cards-container {
     flex-direction: row;
     padding: 14px;
-  }
-}
-
-@media screen and (min-width: 1000px) {
-  .container {
-    max-width: 1440px;
-    margin-left: auto;
-    margin-right: auto;
   }
 }
 

@@ -4,18 +4,24 @@
 .footer{
     background-color: $dark-neutral-clr;
     padding: 1.2rem;
+    &__container{
+        @include desktop{
+            @include flexbox($direction:row-reverse, $justify: flex-start);
+            gap: 60px;
+            width: 100%;
+            max-width: 1150px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
     &__title{
         @include menu-page-title($size: 1.125rem);
         margin-bottom: 1rem;
         color: $white;
         @include desktop{
             margin-bottom: 0;
-            margin-right: 80px;
+            margin-right: 60px;
         }
-    }
-    @include desktop{
-        @include flexbox($direction:row-reverse, $justify: flex-start);
-        gap: 65px;
     }
 }
 
@@ -37,6 +43,6 @@
     }
     @include desktop{
         display: flex;
-        gap: 65px;
+        gap: 60px;
     }
 }
