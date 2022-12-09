@@ -9,6 +9,10 @@
         object-fit: cover;
         margin-bottom: -5px;
     }
+    @include desktop{
+        @include max-width-contain(1440px);
+        @include margin-lf-auto;
+    }
 }
 
 
@@ -27,13 +31,30 @@
         @include flexbox($direction:row, $justify:space-between);
         padding-right: 10px;
         margin-bottom: 10px;
+        @include tablet{
+            justify-content: center
+        }
     }
     &__title{
-        @include menu-page-title
+        @include menu-page-title;
+        @include tablet {
+            margin-right: 25px;
+        }
+    }
+    &__sections-wrapper{
+        @include tablet{
+            @include flexbox;
+        }
     }
     //MENU _ STARTER
     &__starter{
         @extend %menu-layout;
+        @include tablet{
+            width: 90%;
+        }
+        @include desktop{
+            width: 65%;
+        }
     }
     &__subtitle{
         @extend %uppercase-underline; 
@@ -62,10 +83,22 @@
     //MENU _ MAIN-COURSE
     &__main-course{
         @extend %menu-layout;
+        @include tablet{
+            width: 90%;
+        }
+        @include desktop{
+            width: 65%;
+        }
     }
     //MENU _ DESSERT
     &__dessert{
        @extend %menu-layout;
+       @include tablet{
+            width: 90%;
+        }
+        @include desktop{
+            width: 65%;
+        }
     }
     //ORDER BTN
     &__order-btn-wrapper{
@@ -74,5 +107,14 @@
     }
     &__order-btn{
         margin: 20px;
+    }
+    @include tablet{
+        width: 80%;
+        @include margin-lf-auto;
+    }
+    @include desktop{
+        width: 70%;
+        @include max-width-contain(1050px);
+        @include margin-lf-auto;
     }
 }

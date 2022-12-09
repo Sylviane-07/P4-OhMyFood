@@ -11,8 +11,13 @@
     display: block;
     }
   }
+  //MENU PAGE HEADER
   &--menu-page{
     display: inherit;
+    @include desktop{
+      @include margin-lf-auto;
+      @include max-width-contain(1350px);
+    }
   }
   &__arrow-anchor{
     position: relative;

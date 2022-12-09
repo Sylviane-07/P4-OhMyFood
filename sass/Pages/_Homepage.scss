@@ -79,8 +79,7 @@
     @include desktop{
       flex-direction: row;
       justify-content: space-between;
-      margin-left: auto;
-      margin-right: auto;
+      @include margin-lf-auto;
       padding-left: 10px;
       gap: 50px;
       
@@ -99,9 +98,8 @@
   }
   @include desktop{
     width: 100%;
-    max-width: 1150px;
-    margin-left: auto;
-    margin-right: auto;
+    @include max-width-contain;
+    @include margin-lf-auto;
   }
 }
 
@@ -135,8 +133,7 @@
     @include desktop{
     width: 100%;
     max-width: 1150px;
-    margin-left: auto;
-    margin-right: auto;
+    @include margin-lf-auto;
     }
   }
   &__title{

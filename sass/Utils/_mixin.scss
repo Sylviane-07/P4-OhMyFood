@@ -4,3 +4,12 @@
     justify-content: $justify;
     align-items: $align;
 }
+
+@mixin margin-lf-auto{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@mixin max-width-contain($width: 1150px){
+    max-width: $width;
+}
