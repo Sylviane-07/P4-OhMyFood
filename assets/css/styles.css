@@ -197,6 +197,7 @@ a {
 }
 @media screen and (min-width: 1000px) {
   .card__label {
+    padding: 10px;
     margin-top: -25px;
   }
 }
@@ -207,6 +208,11 @@ a {
 }
 .card__subtitle {
   font-size: 1.063rem;
+}
+@media screen and (min-width: 1000px) {
+  .card {
+    width: 22%;
+  }
 }
 
 .header {
