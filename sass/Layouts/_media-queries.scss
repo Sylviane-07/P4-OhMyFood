@@ -28,6 +28,12 @@
     }
 }
 
+// MIXIN FOR MENU PAGE WIDTH & PADDING
+
+@mixin w-pad-lg-screen{
+    width: 90%;
+    padding: 15px;
+}
 
 //ROOT OVERWRITE _ (MENU PAGE) FONT-SIZE FOR SMALLER SCREENS
 :root.html-menu-page{

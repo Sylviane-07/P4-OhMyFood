@@ -64,6 +64,14 @@ a {
   color: #000;
 }
 
+@keyframes slide-up {
+  0% {
+    transform: translateY(80px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
 .menu__dessert, .menu__main-course, .menu__starter {
   display: flex;
   flex-direction: column;
@@ -71,6 +79,9 @@ a {
   align-items: flex-start;
   gap: 12px;
   margin: 20px auto;
+  padding-bottom: 20px;
+  overflow: hidden;
+  animation: slide-up 3s ease;
 }
 
 @media screen and (max-width: 319px) {
@@ -130,8 +141,34 @@ a {
 
 .fa-heart {
   font-size: 1.39rem;
-  margin: 10px;
-  color: #000;
+  position: absolute;
+  cursor: pointer;
+}
+
+.heart-icon-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-right: 15px;
+}
+
+.heart__background {
+  z-index: 1;
+  background-image: linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  opacity: 0;
+}
+
+.heart__empty {
+  background-color: transparent;
+}
+
+.heart__background:hover {
+  opacity: 100%;
+  transition: 1.5s;
 }
 
 .card {
@@ -379,11 +416,12 @@ a {
 @media screen and (min-width: 768px) {
   .menu__starter {
     width: 90%;
+    padding: 15px;
   }
 }
 @media screen and (min-width: 1000px) {
   .menu__starter {
-    width: 65%;
+    width: 75%;
   }
 }
 .menu__meal-label {
@@ -393,9 +431,10 @@ a {
   align-items: end;
   background-color: #FFFFFF;
   box-shadow: 0px 4.01149px 15.0431px rgba(0, 0, 0, 0.1);
-  border-radius: 15.0431px;
+  border-radius: 15px;
   width: 100%;
   padding: 10px;
+  animation: slide-up 3s ease;
 }
 .menu__text-wrapper {
   width: 90%;
@@ -416,21 +455,23 @@ a {
 @media screen and (min-width: 768px) {
   .menu__main-course {
     width: 90%;
+    padding: 15px;
   }
 }
 @media screen and (min-width: 1000px) {
   .menu__main-course {
-    width: 65%;
+    width: 75%;
   }
 }
 @media screen and (min-width: 768px) {
   .menu__dessert {
     width: 90%;
+    padding: 15px;
   }
 }
 @media screen and (min-width: 1000px) {
   .menu__dessert {
-    width: 65%;
+    width: 75%;
   }
 }
 .menu__order-btn-wrapper {
@@ -441,6 +482,7 @@ a {
   align-items: center;
 }
 .menu__order-btn {
+  z-index: 1;
   margin: 20px;
 }
 @media screen and (min-width: 768px) {
