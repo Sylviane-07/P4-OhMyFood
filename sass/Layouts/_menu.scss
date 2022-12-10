@@ -50,10 +50,11 @@
     &__starter{
         @extend %menu-layout;
         @include tablet{
-            width: 90%;
+            @include w-pad-lg-screen;
+            
         }
         @include desktop{
-            width: 65%;
+            width: 75%;
         }
     }
     &__subtitle{
@@ -64,9 +65,11 @@
         @include flexbox($direction:row, $justify:space-between, $align:end);
         background-color: $white;
         box-shadow: 0px 4.01149px 15.0431px rgba(0, 0, 0, 0.1);
-        border-radius: 15.0431px;
+        border-radius: 15px;
         width: 100%;
         padding: 10px;
+        @include slide;
+        
     }
     &__text-wrapper{
         width: 90%;
@@ -84,28 +87,29 @@
     &__main-course{
         @extend %menu-layout;
         @include tablet{
-            width: 90%;
+            @include w-pad-lg-screen;
         }
         @include desktop{
-            width: 65%;
+            width: 75%;
         }
     }
     //MENU _ DESSERT
     &__dessert{
        @extend %menu-layout;
        @include tablet{
-            width: 90%;
+            @include w-pad-lg-screen;
         }
         @include desktop{
-            width: 65%;
+            width: 75%;
         }
     }
     //ORDER BTN
     &__order-btn-wrapper{
         width: 100%;
-        @include flexbox($direction:row)
+        @include flexbox($direction:row);
     }
     &__order-btn{
+        z-index: 1;
         margin: 20px;
     }
     @include tablet{
