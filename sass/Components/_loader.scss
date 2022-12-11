@@ -3,23 +3,33 @@
 
 //doesn't work page become anusable can't click
 
-//@keyframes fading {
-//  0%{
-//    opacity: 100%;
-//  }
-//  100%{
-//    opacity: 0%;
-//  }
-// }
+@keyframes fading {
+  0%{
+    z-index: 10;
+    opacity: 100%;
+  }
+  28%{
+    opacity: 100%;
+  }
+  30%{
+    opacity: 0;
+    visibility: hidden;
+  }
+  100%{
+    opacity: 0;
+    
 
-//@mixin fade{
-//    animation: fading 10s ease forwards;
-//}
+  }
+ }
+
+@mixin fade{
+    animation: fading 30s ease both;
+}
 
 
 
 .loader{
-    z-index: 2;
+    z-index: -10;
     height: 100vh;
     width: 100vw;
     text-align: center;
@@ -28,7 +38,8 @@
     top: 0;
     left: 0;
     background-color: rgba($color: #ffffff, $alpha: 0.5);
-    //@include fade;
+    opacity: 0;
+    @include fade;
 
     
     //SPINNER
