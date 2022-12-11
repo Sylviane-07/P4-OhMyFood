@@ -1,7 +1,9 @@
 //RESTAURANT CARDS
 
 .card{
-  width: 92%;
+  width: 90%;
+  max-width: 335px;
+  min-width: 250px;
   background-color: $white;
   border-radius: 15px;
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
@@ -35,15 +37,34 @@
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
     position: relative;
-    &--align{
-        bottom: 50px;
-        height: 164px;
+    @include larger-phone{
+      bottom: 55px;
+    }
+    @include tablet{
+      bottom: 0;
+    }
+    &--horiz{
+        bottom: 46px;
+        @include larger-phone{
+          bottom: 100px;
+        }
+        @include tablet{
+          bottom: 46px;
+        }
+    }
+    &--verti{
+      bottom: 150px;
+      @include larger-phone{
+        bottom: 200px;
+      }
+      @include tablet{
+        bottom: 150px;
+      }
     }
   }
   &__label{
     padding: 15px;
     @include flexbox($direction: row, $justify:space-between);
-    margin-top: -7px;
     z-index: 2;
     position: relative;
     background-color: white;

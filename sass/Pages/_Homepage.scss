@@ -128,7 +128,7 @@
   background-color: $light-bg-clr;
   padding-top: 2rem;
   padding-bottom: 2rem;
-  @include flexbox($justify:space-around, $align: flex-start);
+  @include flexbox($justify:space-around, $align: unset);
   &__container{
     @include desktop{
     width: 100%;
