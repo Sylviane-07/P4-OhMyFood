@@ -354,6 +354,23 @@ svg {
     width: 33%;
   }
 }
+.card--new::before {
+  z-index: 1;
+  content: "Nouveau";
+  font-weight: 500;
+  font-size: 0.875rem;
+  color: #000;
+  color: #008766;
+  background-color: #99E2D0;
+  position: relative;
+  width: 80px;
+  height: 29px;
+  text-align: center;
+  padding: 5px;
+  border-radius: 2px;
+  right: 10px;
+  margin-top: 10px;
+}
 .card__img-wrapper {
   display: flex;
   flex-direction: column;
@@ -364,21 +381,6 @@ svg {
   overflow: hidden;
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
-}
-.card__img-wrapper--new-tag {
-  font-weight: 500;
-  font-size: 0.875rem;
-  color: #000;
-  z-index: 1;
-  position: relative;
-  width: 80px;
-  height: 29px;
-  color: #008766;
-  background-color: #99E2D0;
-  text-align: center;
-  padding: 5px;
-  border-radius: 2px;
-  margin-right: 15px;
 }
 .card__img {
   width: 100%;
@@ -452,6 +454,7 @@ svg {
 @media screen and (min-width: 1000px) {
   .card {
     width: 22%;
+    min-width: 102px;
   }
 }
 
