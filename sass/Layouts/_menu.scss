@@ -74,7 +74,7 @@
                 @include side-slide($duration: 0.5s);
             }
             .menu__checkbox-icon{
-                @include rotate-icon;
+                @include rotate($duration:0.6s);
             }
         }
     }

@@ -1,5 +1,4 @@
 @import "../Utils/mixin";
-
 .header {
   @include flexbox($direction: row);
   &__logo {

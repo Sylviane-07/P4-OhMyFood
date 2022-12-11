@@ -1,3 +1,8 @@
+//ANIMATION VARIABLES
+$duration:2.5s;
+$animation-style: ease-in-out;
+$animation-type: forwards;
+
 //MENU PAGES SLIDE UP ANIMATION
 
 @keyframes slide-up{
@@ -11,8 +16,6 @@
 
 
 //ANIMATION MIXIN
-
-$duration:2.5s;
 
 @mixin slide($duration:2.5s){
   animation: slide-up $duration ease;
@@ -88,14 +91,14 @@ $duration:2.5s;
 
 @mixin side-slide($duration){
   animation: side-slide-animation $duration ease-in;
-  animation-fill-mode: forwards;
+  animation-fill-mode: $animation-type;
 }
 
 
 
 //CHECKBOX ROTATE ANIMATION
 
- @keyframes rotate{
+ @keyframes rotation{
   0%{
     transform: rotate(0);
   }
@@ -104,6 +107,10 @@ $duration:2.5s;
   }
  }
 
- @mixin rotate-icon{
-  animation: rotate 0.6s ease-in-out forwards;
+
+ @mixin rotate($duration:2.5s, $animation-style: ease-in-out, $animation-type:forwards){
+  animation: rotation $duration $animation-style $animation-type;
  }
+
+ 
+  

@@ -1,0 +1,96 @@
+//LOADER ANIMATION & FADING
+
+
+//doesn't work page become anusable can't click
+
+//@keyframes fading {
+//  0%{
+//    opacity: 100%;
+//  }
+//  100%{
+//    opacity: 0%;
+//  }
+// }
+
+//@mixin fade{
+//    animation: fading 10s ease forwards;
+//}
+
+
+
+.loader{
+    z-index: 2;
+    height: 100vh;
+    width: 100vw;
+    text-align: center;
+    @include flexbox($direction:row);
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba($color: #ffffff, $alpha: 0.5);
+    //@include fade;
+
+    
+    //SPINNER
+    &__spinner{
+      width: 60vw;
+    height: 60vw;
+    max-width: 465px;
+    max-height: 465px;;
+    border-radius: 50%;
+    position: absolute;
+    background: conic-gradient(#FF79DA, #9356DC, #99E2D0, #9356DC,#FF79DA);
+    @include rotate($duration:1.5s, $animation-style:linear, $animation-type:infinite);
+    box-shadow: 0px 0px 150px -75px black;
+    border: 2px solid white;  
+    }
+    &__text{
+    z-index: 1;
+    @include menu-page-title($size:clamp(18px, 7vw, 55px));
+    }
+}
+
+
+
+
+//SVG STYLE & ANIMATION
+
+svg{
+    width: 100vw;
+    max-width: 768px;
+    stroke: #fff;
+    position: absolute;
+    margin-right: 5px; 
+}
+
+#outer-cercle{
+    stroke: #fff;
+}
+
+#fork{
+    animation: fork 4s linear infinite;
+    transform-origin: center;
+    transform-box: fill-box;
+}
+
+@keyframes fork{
+  0% { transform: rotate(0deg) }
+  50% { transform: rotate(15deg) }
+  80% { transform: rotate(-15deg) }
+  100% { transform: rotate(0deg) }
+}
+
+#knife{
+    animation: knife 4s linear infinite;
+    transform-origin: center;
+    transform-box: fill-box;
+}
+
+@keyframes knife{
+  0% { transform: rotate(0deg) }
+  50% { transform: rotate(-25deg) }
+  80% { transform: rotate(15deg) }
+  100% { transform: rotate(0deg) }
+}
+
+
