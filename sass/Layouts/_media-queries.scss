@@ -38,10 +38,13 @@
 //ROOT OVERWRITE _ (MENU PAGE) FONT-SIZE FOR SMALLER SCREENS
 :root.html-menu-page{
     @include smaller-phone{
-    font-size: 72%;
+    font-size: 73%;
     white-space: nowrap;
     }
     @include phone{
-        font-size: 85%;
+        font-size: 86%;
+    }
+    @include larger-phone{
+        font-size: inherit;
     }
 }

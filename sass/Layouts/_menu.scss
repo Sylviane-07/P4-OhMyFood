@@ -27,6 +27,7 @@
     background-color: $light-bg-clr;
     border-radius: 40px 40px 0px 0px;
     padding: 30px 15px;
+    white-space: nowrap;
     &__title-icon-wrapper{
         @include flexbox($direction:row, $justify:space-between);
         padding-right: 10px;
@@ -77,25 +78,31 @@
     &__text-wrapper{
         width: 90%;
         padding: 10px 0 10px 10px;
+        @extend %text-ellipsis;
     }
     &__meal-title{
         @include font-500($size:1.125rem);
+        @extend %text-ellipsis;
     }
     &__meal-subtitle{
         font-size: 0.938rem;
+        @extend %text-ellipsis;
     }
     &__meal-price{
         @include font-700($size:00.938rem);
-        padding: 5px 5px 5px 2px;
+        padding: 8px;
     }
     &__checkbox{
         @include flexbox;
-        width: 40px;
+        width: 59px;
         height: 48px;
-        margin-right: -40px;
+        margin-right: -59px;
         background-color: $contrast-color;
         @include phone{
             height: 54px;
+        }
+        @include larger-phone{
+            height: 60px;
         }
     }
     &__checkbox-icon{
