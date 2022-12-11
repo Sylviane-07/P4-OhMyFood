@@ -2,15 +2,74 @@
 
   @keyframes slide-up{
     0%{
-        transform: translateY(80px);
+        transform: translateY(140px);
     }
     100%{
         transform: translateY(0);
     }
 }
 
-@mixin slide{
-  animation: slide-up 3s ease;
+
+//ANIMATION MIXIN
+
+$duration:2.5s;
+
+@mixin slide($duration:2.5s){
+  animation: slide-up $duration ease;
 }
 
+// MENU PAGE SLIDE ANIMATION
 
+.menu{
+  //STARTER
+  &__starter{
+    @include slide;
+  }
+  &__starter article:nth-of-type(1){
+    @include slide;
+  }
+  &__starter article:nth-of-type(2){
+    @include slide($duration:4s);
+    
+  }
+  &__starter article:nth-of-type(3){
+    @include slide($duration:6s);
+    
+  }
+  &__starter article:nth-of-type(4){
+    @include slide($duration:6.5s);
+    
+  }
+
+  //MAIN COURSE
+  &__main-course{
+    @include slide;
+  }
+  &__main-course article:nth-of-type(1){
+    @include slide;
+  }
+  &__main-course article:nth-of-type(2){
+    @include slide($duration:4s);
+    
+  }
+  &__main-course article:nth-of-type(3){
+    @include slide($duration:6s);
+    
+  }
+  //DESSERT
+
+  &__dessert{
+    @include slide;
+  }
+  &__dessert article:nth-of-type(1){
+    @include slide;
+  }
+  &__dessert article:nth-of-type(2){
+    @include slide($duration:4s);
+    
+  }
+  &__dessert article:nth-of-type(3){
+    @include slide($duration:6s);
+    
+  }
+}

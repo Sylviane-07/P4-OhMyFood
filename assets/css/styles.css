@@ -64,14 +64,6 @@ a {
   color: #000;
 }
 
-@keyframes slide-up {
-  0% {
-    transform: translateY(80px);
-  }
-  100% {
-    transform: translateY(0);
-  }
-}
 .menu__dessert, .menu__main-course, .menu__starter {
   display: flex;
   flex-direction: column;
@@ -81,7 +73,6 @@ a {
   margin: 20px auto;
   padding-bottom: 20px;
   overflow: hidden;
-  animation: slide-up 3s ease;
 }
 
 @media screen and (max-width: 319px) {
@@ -94,6 +85,54 @@ a {
   :root.html-menu-page {
     font-size: 85%;
   }
+}
+
+@keyframes slide-up {
+  0% {
+    transform: translateY(140px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+.menu__starter {
+  animation: slide-up 2.5s ease;
+}
+.menu__starter article:nth-of-type(1) {
+  animation: slide-up 2.5s ease;
+}
+.menu__starter article:nth-of-type(2) {
+  animation: slide-up 4s ease;
+}
+.menu__starter article:nth-of-type(3) {
+  animation: slide-up 6s ease;
+}
+.menu__starter article:nth-of-type(4) {
+  animation: slide-up 6.5s ease;
+}
+.menu__main-course {
+  animation: slide-up 2.5s ease;
+}
+.menu__main-course article:nth-of-type(1) {
+  animation: slide-up 2.5s ease;
+}
+.menu__main-course article:nth-of-type(2) {
+  animation: slide-up 4s ease;
+}
+.menu__main-course article:nth-of-type(3) {
+  animation: slide-up 6s ease;
+}
+.menu__dessert {
+  animation: slide-up 2.5s ease;
+}
+.menu__dessert article:nth-of-type(1) {
+  animation: slide-up 2.5s ease;
+}
+.menu__dessert article:nth-of-type(2) {
+  animation: slide-up 4s ease;
+}
+.menu__dessert article:nth-of-type(3) {
+  animation: slide-up 6s ease;
 }
 
 .btn {
@@ -459,6 +498,7 @@ a {
   }
 }
 .menu__meal-label {
+  overflow: hidden;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -468,7 +508,6 @@ a {
   border-radius: 15px;
   width: 100%;
   padding: 10px;
-  animation: slide-up 3s ease;
 }
 .menu__text-wrapper {
   width: 90%;

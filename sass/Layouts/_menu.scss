@@ -50,8 +50,7 @@
     &__starter{
         @extend %menu-layout;
         @include tablet{
-            @include w-pad-lg-screen;
-            
+            @include w-pad-lg-screen; 
         }
         @include desktop{
             width: 75%;
@@ -62,14 +61,13 @@
     }
     //MENU LABEL STYLE
     &__meal-label{
+        overflow: hidden;
         @include flexbox($direction:row, $justify:space-between, $align:end);
         background-color: $white;
         box-shadow: 0px 4.01149px 15.0431px rgba(0, 0, 0, 0.1);
         border-radius: 15px;
         width: 100%;
         padding: 10px;
-        @include slide;
-        
     }
     &__text-wrapper{
         width: 90%;
