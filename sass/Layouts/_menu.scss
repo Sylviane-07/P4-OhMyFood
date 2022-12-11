@@ -73,6 +73,9 @@
             .menu__checkbox{
                 @include side-slide($duration: 0.5s);
             }
+            .menu__checkbox-icon{
+                @include rotate-icon;
+            }
         }
     }
     &__text-wrapper{

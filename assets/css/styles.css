@@ -153,6 +153,14 @@ a {
     margin-right: 0px;
   }
 }
+@keyframes rotate {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
 .btn {
   font-weight: 500;
   font-size: 1rem;
@@ -533,6 +541,9 @@ a {
 .menu__meal-label:hover .menu__checkbox {
   animation: side-slide-animation 0.5s ease-in;
   animation-fill-mode: forwards;
+}
+.menu__meal-label:hover .menu__checkbox-icon {
+  animation: rotate 0.6s ease-in-out forwards;
 }
 .menu__text-wrapper {
   width: 90%;

@@ -90,3 +90,20 @@ $duration:2.5s;
   animation: side-slide-animation $duration ease-in;
   animation-fill-mode: forwards;
 }
+
+
+
+//CHECKBOX ROTATE ANIMATION
+
+ @keyframes rotate{
+  0%{
+    transform: rotate(0);
+  }
+  100%{
+    transform: rotate(360deg);
+  }
+ }
+
+ @mixin rotate-icon{
+  animation: rotate 0.6s ease-in-out forwards;
+ }
