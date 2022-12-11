@@ -26,7 +26,7 @@
     bottom: 50px;
     background-color: $light-bg-clr;
     border-radius: 40px 40px 0px 0px;
-    padding: 30px 17px;
+    padding: 30px 15px;
     &__title-icon-wrapper{
         @include flexbox($direction:row, $justify:space-between);
         padding-right: 10px;
@@ -67,10 +67,16 @@
         box-shadow: 0px 4.01149px 15.0431px rgba(0, 0, 0, 0.1);
         border-radius: 15px;
         width: 100%;
-        padding: 10px;
+        &:hover{
+            cursor: pointer;
+            .menu__checkbox{
+                @include side-slide($duration: 0.5s);
+            }
+        }
     }
     &__text-wrapper{
         width: 90%;
+        padding: 10px 0 10px 10px;
     }
     &__meal-title{
         @include font-500($size:1.125rem);
@@ -79,7 +85,21 @@
         font-size: 0.938rem;
     }
     &__meal-price{
-        @include font-700($size:00.938rem)
+        @include font-700($size:00.938rem);
+        padding: 5px 5px 5px 2px;
+    }
+    &__checkbox{
+        @include flexbox;
+        width: 40px;
+        height: 48px;
+        margin-right: -40px;
+        background-color: $contrast-color;
+        @include phone{
+            height: 54px;
+        }
+    }
+    &__checkbox-icon{
+        color: $white;
     }
     //MENU _ MAIN-COURSE
     &__main-course{

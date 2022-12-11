@@ -1,12 +1,12 @@
 //MENU PAGES SLIDE UP ANIMATION
 
-  @keyframes slide-up{
-    0%{
-        transform: translateY(140px);
-    }
-    100%{
-        transform: translateY(0);
-    }
+@keyframes slide-up{
+  0%{
+      transform: translateY(140px);
+  }
+  100%{
+      transform: translateY(0);
+  }
 }
 
 
@@ -72,4 +72,21 @@ $duration:2.5s;
     @include slide($duration:6s);
     
   }
+}
+
+
+// SLIDE SIDE & ROTATE CHECK ANIAMTIONS
+
+@keyframes side-slide-animation{
+  from{
+    margin-right: -40px;
+  }
+  to{
+    margin-right: 0px;
+  }
+}
+
+@mixin side-slide($duration){
+  animation: side-slide-animation $duration ease-in;
+  animation-fill-mode: forwards;
 }
