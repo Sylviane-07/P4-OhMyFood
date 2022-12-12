@@ -281,7 +281,7 @@ svg {
 }
 
 .btn--gradient:hover {
-  padding: 0.9rem 1.25rem;
+  transform: scale(1.03);
 }
 .btn--booking {
   display: flex;
