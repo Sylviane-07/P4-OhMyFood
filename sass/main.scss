@@ -1,9 +1,10 @@
 @import "Base/reset";
 @import "Base/typography";
+@import "Layouts/media-queries";
 @import "Base/colors";
 @import "Utils/mixin";
 @import "Utils/placeholder.scss";
-@import "Layouts/media-queries";
+
 @import "Components/menu-page-animations";
 @import "Components/loader";
 @import "Components/buttons";
