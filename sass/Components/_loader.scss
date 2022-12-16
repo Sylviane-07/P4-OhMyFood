@@ -1,8 +1,5 @@
 //LOADER ANIMATION & FADING
 
-
-//doesn't work page become anusable can't click
-
 @keyframes fading {
   0%{
     z-index: 100;
@@ -21,7 +18,7 @@
  }
 
 @mixin fade{
-    animation: fading 20s ease both;
+    animation: fading 10s ease both;
 }
 
 

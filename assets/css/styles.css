@@ -195,7 +195,7 @@ a {
   left: 0;
   background-color: rgba(255, 255, 255, 0.5);
   opacity: 0;
-  animation: fading 20s ease both;
+  animation: fading 10s ease both;
 }
 .loader__spinner {
   width: 60vw;
