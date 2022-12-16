@@ -60,13 +60,17 @@ a {
   color: #000;
 }
 
+:root::-webkit-scrollbar {
+  display: none;
+}
+
 a {
   color: #000;
 }
 
 @media screen and (max-width: 319px) {
   :root.html-menu-page {
-    font-size: 68%;
+    font-size: 73%;
     white-space: nowrap;
   }
 }

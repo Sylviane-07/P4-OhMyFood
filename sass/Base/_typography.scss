@@ -57,6 +57,10 @@ $weight:400;
     @include font-300;
 }
 
+:root::-webkit-scrollbar{
+    display: none;
+}
+
 a{ 
     color: $default-txt-clr;
 }
