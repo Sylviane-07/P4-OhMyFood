@@ -78,6 +78,22 @@
       margin-top: -25px;
     }
   }
+  &__text-wrapper{
+    width: 70vw;
+    @include phone{
+    width: 74vw;
+    }
+    @include larger-phone{
+      width: 281px;
+    }
+    @include tablet{
+      width: 27vw;
+    }
+    @include desktop{
+    width: 17vw;
+    max-width: 210px;
+    }
+  }
   &__title{
     @include font-700(1.125rem);
   }

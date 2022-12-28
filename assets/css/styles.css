@@ -449,6 +449,30 @@ svg {
     margin-top: -25px;
   }
 }
+.card__text-wrapper {
+  width: 70vw;
+}
+@media screen and (min-width: 320px) {
+  .card__text-wrapper {
+    width: 74vw;
+  }
+}
+@media screen and (min-width: 375px) {
+  .card__text-wrapper {
+    width: 281px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .card__text-wrapper {
+    width: 27vw;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .card__text-wrapper {
+    width: 17vw;
+    max-width: 210px;
+  }
+}
 .card__title {
   font-weight: 700;
   font-size: 1.125rem;
